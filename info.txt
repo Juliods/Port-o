@@ -1,0 +1,6 @@
+This program was made on an evening with the intent to train with java.
+Inittially there were meant to be two classes, an door and another one which would controll it.
+However my ability to replicate this plan was limited by my lack of understanding of what i was doing.
+
+The intent of the program is to controll an gate and allow an user to open or close the gate using java.
+
