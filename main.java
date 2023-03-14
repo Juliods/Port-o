@@ -12,7 +12,7 @@ public class main {
 		int i = 1;
 				
 		System.out.println("Gate software V:0.1");
-		// Here the code asks the user what are the possible actions
+		//perguntas sobre o status atual do portão
 		while (i == 1){ 
 		System.out.println("Is the gate open?");
 		Scanner scn = new Scanner(System.in);
@@ -28,13 +28,12 @@ public class main {
 		}
 		System.out.println("Type 0 to close the gate or 1 to open the gate\n");
 		int gate_action = scn.nextInt();
-		/* Originally the code was meant to recieve a signal from a sensor wich would set an boolean value
-		 Sadly this wasn't avaible at the time of development so the code just asks the user instead. Furthermore since
-		 There's no gate the code doesn't send an signal at all.
+		/* inicialmente o software receberia um sinal de um sensor, mas não foi
+		possível implementar isso, mas para tal, basta subistituir este bloco com a entrada do sensor
 		*/
 		if ( gate_action == 1 && gate_state == 0) {
 			System.out.println("The gate will now open\n To run this program again, type 1 or to exit type 0");
-			//This is where the signal to open the gate would go
+			//E é aqui que o comando para abrir o portão iria
 			i = scn.nextInt();
 		} else if (gate_action == 1 && gate_state == 1){
 			System.out.println("The gate should be already open\n To run this program again, type 1 or to exit type 0\n If the gate is still closed, run the program again and inform that the gate is open\n If problem persists, the gate's motor might be broken or stuck");
